@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-color: rgb(209, 209, 32);
+}
+
+.click-field {
+  position: relative;
+  background-color: rgb(223, 161, 68);
+  height: 500px;
+}
+
+.counter-number {
+  position: absolute;
+  background-color: aquamarine;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5px;
+  width: 70px;
+  height: 50px;
+  top: 40%;
+  left: 45%;
+  border-radius: 10px;
+}
+
+.color-field {
+  position: absolute;
+  background-color: rgb(218, 32, 172);
+  width: 0.1%;
+  height: 500px;
+}
+
+.reset {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 10%;
+  right: 10%;
+  background-color: salmon;
+  border-radius: 50px;
+}
+
+.reset:hover {
+  background-color: blueviolet;
+}
