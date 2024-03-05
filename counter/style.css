@@ -1,16 +1,20 @@
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 header {
   position: relative;
-  background-color: rgb(209, 209, 32);
+  background-color: gold;
+  height: 10vh;
+  border: 1px solid black;
 }
 
 .click-field {
   position: relative;
-  background-color: rgb(223, 161, 68);
-  height: 500px;
+  background-color: gold;
+  height: 90vh;
 }
 
 .counter-number {
@@ -19,7 +23,7 @@ header {
   font-size: 40px;
   text-align: center;
   padding-top: 5px;
-  width: 70px;
+  width: 6%;
   height: 50px;
   top: 40%;
   left: 45%;
@@ -28,19 +32,19 @@ header {
 
 .color-field {
   position: absolute;
-  background-color: rgb(218, 32, 172);
+  background-color: dodgerblue;
   width: 0.1%;
-  height: 500px;
+  height: 90vh;
 }
 
 .reset {
   position: absolute;
-  width: 150px;
+  width: 100px;
   height: 50px;
   top: 10%;
   right: 10%;
-  background-color: salmon;
-  border-radius: 50px;
+  background-color: dodgerblue;
+  border-radius: 10px;
 }
 
 .reset:hover {

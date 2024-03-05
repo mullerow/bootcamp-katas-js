@@ -11,19 +11,15 @@ function countFunction(e) {
     counter = 0;
     colorCount = 0;
   }
-  if (e.target === click || e.key === " ") {
+  if (e.target === click || e.key === " " || e.key === "Enter") {
     counter++;
     colorCount++;
     console.log(counter);
   }
   if (counter % 100 === 0) {
-    s;
     colorCount = 0;
   }
 
-  if (e.key === "space") {
-    counter++;
-  }
   number.innerText = counter;
   colorField.style.width = colorCount + "%";
 }
