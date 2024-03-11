@@ -1,52 +1,59 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@media print {
+  @page {
+    size: A4;
+    padding: 1cm;
+  }
 
-header {
-  position: relative;
-  background-color: gold;
-  height: 10vh;
-  border: 1px solid black;
-}
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-.click-field {
-  position: relative;
-  background-color: gold;
-  height: 90vh;
-}
+  header {
+    position: relative;
+    background-color: gold;
+    height: 10vh;
+    border: 1px solid black;
+  }
 
-.counter-number {
-  position: absolute;
-  background-color: aquamarine;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 5px;
-  width: 6%;
-  height: 50px;
-  top: 40%;
-  left: 45%;
-  border-radius: 10px;
-}
+  .click-field {
+    position: relative;
+    background-color: gold;
+    height: 90vh;
+  }
 
-.color-field {
-  position: absolute;
-  background-color: dodgerblue;
-  width: 0.1%;
-  height: 90vh;
-}
+  .counter-number {
+    position: absolute;
+    background-color: aquamarine;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5px;
+    width: 6%;
+    height: 50px;
+    top: 40%;
+    left: 45%;
+    border-radius: 10px;
+  }
 
-.reset {
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  top: 10%;
-  right: 10%;
-  background-color: dodgerblue;
-  border-radius: 10px;
-}
+  .color-field {
+    position: absolute;
+    background-color: dodgerblue;
+    width: 0.1%;
+    height: 90vh;
+  }
 
-.reset:hover {
-  background-color: blueviolet;
+  .reset {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 10%;
+    right: 10%;
+    background-color: dodgerblue;
+    border-radius: 10px;
+  }
+
+  .reset:hover {
+    background-color: blueviolet;
+  }
 }

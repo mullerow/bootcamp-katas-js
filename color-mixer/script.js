@@ -6,11 +6,16 @@ const colorField = document.querySelector(".color-field");
 const invert1 = document.querySelector(".invert-field1");
 const invert2 = document.querySelector(".invert-field2");
 const opacity = document.querySelector(".opacity");
+const button = document.querySelector("button");
+const hexfield = document.querySelector(".hex-field");
 let color1 = 0;
 let color2 = 0;
 let color3 = 0;
+let hexCode = "#aaaaaa";
 let brightnessLevel = 1;
+let opacityLevel = 1;
 function colorMixer(e) {
+  console.log("target", e.target);
   if (e.target === range1) {
     color1 = e.target.value * 2.55;
   }
@@ -40,8 +45,25 @@ function colorMixer(e) {
   invert2.style.filter = "invert(70%)";
 }
 
+async function loadRandomColor() {
+  const response = await fetch("https://dummy-apis.netlify.app/api/color");
+  if (response.ok) {
+    const data = await response.json();
+    console.log(data);
+    console.log(data.rgb.r);
+    color1 = data.rgb.r;
+    color2 = data.rgb.g;
+    color3 = data.rgb.b;
+    hexCode = data.color;
+    console.log("data.color", data.color);
+  }
+  hexfield.textContent = "hexadezimalfarbe:  " + hexCode;
+}
+
 range1.addEventListener("input", colorMixer);
 range2.addEventListener("input", colorMixer);
 range3.addEventListener("input", colorMixer);
 brightness.addEventListener("input", colorMixer);
 opacity.addEventListener("input", colorMixer);
+button.addEventListener("click", loadRandomColor);
+button.addEventListener("click", colorMixer);

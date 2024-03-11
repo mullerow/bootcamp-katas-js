@@ -34,3 +34,21 @@ label {
   margin-right: 20px;
   font-size: 30px;
 }
+
+.hex-field {
+  margin-left: 50px;
+  height: 50px;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 30px;
+  border: 4px solid black;
+  padding-left: 50px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgb(208, 168, 247);
+  border-radius: 5px;
+  font-size: 18px;
+}
